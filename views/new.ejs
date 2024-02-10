@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create post</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea, button {
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form method="post" action="/posts">
+        <input type="text" placeholder="username" name="username">
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <button>Submit post</button>
+    </form>
+    
+</body>
+</html>
